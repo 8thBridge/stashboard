@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/css/gh-buttons.css" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+  <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+    for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+    }
+  </script>
+  <![endif]-->
     {% block js %}
     {% endblock %}
   </head>
@@ -14,12 +24,13 @@
       <header>
 	<div class="actions button-container">
 	  {% if admin %}
-	  <a class="button pill big" href="/admin">Admin</a>
+	  <a class="button big" href="/admin">Admin</a>
 	  {% endif %}
-	  <a href="{{ report_url }}" class="button pill big">Report an Issue</a>
+	  <a href="{{ report_url }}" class="button big">Report an Issue</a>
 	</div>
-        <img id="logo" src="/images/logo.png" alt="Logo"/>
-        <a href="/"><h1 id="title">{{ title }}</h1></a>
+	
+       <h1 id="logo"><a href="/" id="logo" alt="{{ title }}">{{ title }}</a></h1>
+        
       </header>
       <section id="content">
         {% block content %}

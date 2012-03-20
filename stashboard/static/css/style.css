@@ -4,7 +4,7 @@ html, body{
 
 body{
   font:12px arial,helvetica,verdana,sans-serif;
-  background: rgb(247, 247, 247);
+  background: #f0f0f0;
 }
 
 a {
@@ -14,6 +14,7 @@ a {
 
 a:hover {
   color:#666;
+  text-decoration:none;
 }
 
 em {
@@ -31,22 +32,31 @@ h2 {font-size: 32px; font-weight: bold;}
 h3 {font-size: 24px; font-weight: bold;}
 h3.date-range {color: #999; margin-top: 20px}
 
-header {height: 70px;}
-
+header {height: 100px;position:relative;}
+/*
 header h1 {margin: 15px; float: left; height: 40px; line-height: 40px;}
 header h1 span {font-weight: normal;}
+*/
 header h2 {margin: 15px 0; float: left; line-height: 67px;}
 header .button-container { float: right; margin-top: 20px;}
-#logo { height: 40px; width: 54px; float: left; margin: 15px 0;}
+
+#logo { margin: 0; padding: 0; text-indent: -9999px; position: absolute; left: 32px; top: 45px; }
+#logo a { margin: 0; padding: 0; display: block; width: 167px; height: 28px; background: url(/images/logo.png) top left no-repeat; outline: none; }
 
 #status { height: 200px; }
 #status h2 { font-size: 60px; color: #FFF; text-align: center; padding-top: 65px;text-shadow: 2px 2px 0px #000;}
 
 #content {
-  border: 1px solid rgb(228, 228, 228);
+  border: #CCC 1px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   background: white;
   padding: 20px;
   position: relative;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25); 
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25); 
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
 .dialog { display: none; }
@@ -157,7 +167,7 @@ nav .selected {
 }
 
 #services th {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #services th:first-child {
