@@ -38,9 +38,9 @@ header h1 {margin: 15px; float: left; height: 40px; line-height: 40px;}
 header h1 span {font-weight: normal;}
 */
 header h2 {margin: 15px 0; float: left; line-height: 67px;}
-header .button-container { float: right; margin-top: 20px;}
+header .button-container { float: right; margin-top: 45px; margin-right: 20px; }
 
-#logo { margin: 0; padding: 0; text-indent: -9999px; position: absolute; left: 32px; top: 45px; }
+#logo { margin: 0; padding: 0; text-indent: -9999px; position: absolute; left: 15px; top: 22px; }
 #logo a { margin: 0; padding: 0; display: block; width: 167px; height: 28px; background: url(/images/logo.png) top left no-repeat; outline: none; }
 
 #status { height: 200px; }
